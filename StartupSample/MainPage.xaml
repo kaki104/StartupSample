@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="StartupSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StartupSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Margin="16">
+            <TextBlock Text="Settings" Style="{StaticResource HeaderTextBlockStyle}"/>
+            <TextBlock Style="{StaticResource SubheaderTextBlockStyle}"
+                       Text="Activation Kind"/>
+            <TextBlock x:Name="ActivationKind" Text="User Launch"
+                       Style="{StaticResource BodyTextBlockStyle}"/>
+            <Button x:Name="EnableButton" Content="Request to Enable Startup"
+                    Click="Button_Click"/>
+            <Button x:Name="DiableButton" Content="Disable Startup"
+                    Click="Button_Click" Visibility="Collapsed"/>
+            <TextBlock Style="{StaticResource SubheaderTextBlockStyle}"
+                       Text="Startup State"/>
+            <TextBlock x:Name="StartupState" Text="Disabled"
+                       Style="{StaticResource BodyTextBlockStyle}"/>
+        </StackPanel>
+        <WebView Grid.Column="1" Source="https://kaki104.tistory.com"/>
+    </Grid>
+</Page>
