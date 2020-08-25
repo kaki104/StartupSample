@@ -2,6 +2,12 @@
 Future Of DotNet
 https://youtube.com/FutureOfDotNet
 
+> UWP앱을 시작프로그램으로 등록/삭제하는 방법입니다.
+
+Youtube : https://youtu.be/5cI6oS0HLOQ
+
+Blog : https://kaki104.tistory.com/663
+
 ## Reference
 - Windows 10 Anniversary Update
 - Configure your app to start at log-in
