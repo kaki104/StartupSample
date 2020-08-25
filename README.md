@@ -2,7 +2,7 @@
 Future Of DotNet
 https://youtube.com/FutureOfDotNet
 
-> UWP¾ÛÀ» ½ÃÀÛÇÁ·Î±×·¥À¸·Î µî·Ï/»èÁ¦ÇÏ´Â ¹æ¹ıÀÔ´Ï´Ù.
+> UWPì•±ì„ ì‹œì‘í”„ë¡œê·¸ë¨ìœ¼ë¡œ ë“±ë¡/ì‚­ì œí•˜ëŠ” ë°©ë²•ì…ë‹ˆë‹¤.
 
 Youtube : https://youtu.be/5cI6oS0HLOQ
 
@@ -29,7 +29,7 @@ Blog : https://kaki104.tistory.com/663
 - StartupTask includes a Disable method
 - If the user disables, then the prompt is not shown again
 - If the feature is disabled by local admin or group policy, then the user prompt is not shown, and startup cannot be enabled
-- Platforms other than Desktop that don¡¯t support startup tasks also report DisabledByPolicy
+- Platforms other than Desktop that donâ€™t support startup tasks also report DisabledByPolicy
 
 ## Package.appxmanifest
 - xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
@@ -38,8 +38,8 @@ Blog : https://kaki104.tistory.com/663
 ```xaml
 <Application>
     <Extensions>
-        <uap5:Extension Category="windows.startupTask¡° Executable="StartupXXX.exe¡° EntryPoint="StartupXXX.App">
-            <uap5:StartupTask TaskId="StartupXXX¡° Enabled="false¡° DisplayName="StartupXXX¡°/>
+        <uap5:Extension Category="windows.startupTaskâ€œ Executable="StartupXXX.exeâ€œ EntryPoint="StartupXXX.App">
+            <uap5:StartupTask TaskId="StartupXXXâ€œ Enabled="falseâ€œ DisplayName="StartupXXXâ€œ/>
         </uap5:Extension>
     </Extensions>
 </Application>
